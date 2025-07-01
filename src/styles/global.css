@@ -1,1 +1,169 @@
 @import 'tailwindcss';
+
+
+
+/* ==========================================================================
+   Global Styles - Freelance Website with Tailwind CSS
+   ========================================================================== */
+
+/* CSS Custom Properties for consistent theming */
+:root {
+  /* Purple Color Palette */
+  --primary-purple: #667eea;
+  --secondary-purple: #764ba2;
+  --purple-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --purple-light: #8b94f0;
+  --purple-dark: #5a67d8;
+  
+  /* Font Families */
+  --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+
+html {
+  font-family: var(--font-primary);
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply text-gray-800 bg-white;
+}
+
+/* ==========================================================================
+   Custom Component Classes
+   ========================================================================== */
+
+/* Brand gradient text */
+.text-gradient {
+  background: var(--purple-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Purple gradient background */
+.bg-gradient-purple {
+  background: var(--purple-gradient);
+}
+
+/* Purple gradient border */
+.border-gradient-purple {
+  border-image: var(--purple-gradient) 1;
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply inline-block px-6 py-3 rounded-lg text-white font-semibold transition-all duration-300 ease-in-out;
+  background: var(--purple-gradient);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.btn-primary:hover {
+  @apply -translate-y-0.5;
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+  @apply inline-block px-6 py-3 rounded-lg font-semibold transition-all duration-300 ease-in-out;
+  @apply bg-white border-2 border-purple-500 text-purple-500;
+}
+
+.btn-secondary:hover {
+  @apply bg-purple-500 text-white -translate-y-0.5;
+}
+
+.btn-outline {
+  @apply inline-block px-6 py-3 rounded-lg font-semibold transition-all duration-300 ease-in-out;
+  @apply bg-transparent border-2 border-purple-500 text-purple-500;
+}
+
+.btn-outline:hover {
+  @apply bg-purple-500 text-white -translate-y-0.5;
+}
+
+/* Navigation specific styles */
+.nav-brand-link {
+  @apply no-underline flex flex-col;
+}
+
+.nav-brand-text {
+  @apply text-2xl font-bold;
+}
+
+.nav-brand-subtitle {
+  @apply text-sm text-gray-600 -mt-1;
+}
+
+.nav-link {
+  @apply text-gray-800 no-underline font-medium transition-colors duration-300 ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--primary-purple);
+}
+
+.nav-cta-link {
+  @apply text-white px-6 py-3 rounded-md font-semibold transition-all duration-200 ease-in-out;
+  background: var(--purple-gradient) !important;
+  color: white !important;
+}
+
+.nav-cta-link:hover {
+  @apply -translate-y-0.5;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Mobile menu toggle */
+.mobile-menu-toggle {
+  @apply flex flex-col bg-transparent border-none cursor-pointer p-2 md:hidden;
+}
+
+.mobile-menu-toggle span {
+  @apply w-6 h-0.5 bg-gray-800 my-0.5 transition-all duration-300 rounded-sm;
+}
+
+/* Footer specific styles */
+.footer-cta {
+  @apply inline-block text-white px-6 py-3 rounded-md no-underline font-semibold mt-4 transition-transform duration-200 ease-in-out;
+  background: var(--purple-gradient);
+}
+
+.footer-cta:hover {
+  @apply -translate-y-0.5;
+}
+
+.social-link {
+  @apply text-gray-200 no-underline transition-colors duration-300 ease-in-out;
+}
+
+.social-link:hover {
+  color: var(--purple-light);
+}
+
+/* ==========================================================================
+   Responsive Utilities
+   ========================================================================== */
+
+/* Mobile navigation */
+@media (max-width: 768px) {
+  .nav-links {
+    @apply hidden absolute top-full left-0 right-0 bg-white flex-col p-4 shadow-lg;
+  }
+
+  .nav-links.mobile-open {
+    @apply flex;
+  }
+}
+
+/* Custom shadows */
+.shadow-purple {
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.shadow-purple-lg {
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}

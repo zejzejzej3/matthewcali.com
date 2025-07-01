@@ -1,16 +1,97 @@
 ---
+// src/layouts/Main.astro
 import '../styles/global.css';
-const { content } = Astro.props;
+
+export interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+}
+
+const { 
+  title, 
+  description = "Professional freelance web development services", 
+  keywords = "freelance, web developer, ruby on rails, javascript, stimulus" 
+} = Astro.props;
 ---
 
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>{content.title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="nav-brand">
+          <a href="/">
+            <span class="brand-text">YourName</span>
+            <span class="brand-subtitle">Web Developer</span>
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/portfolio">Portfolio</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact" class="cta-link">Get In Touch</a></li>
+        </ul>
+        <button class="mobile-menu-toggle" id="mobileToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Let's Work Together</h3>
+          <p>Ready to bring your project to life? Let's discuss how I can help.</p>
+          <a href="/contact" class="footer-cta">Start a Project</a>
+        </div>
+        <div class="footer-section">
+          <h3>Services</h3>
+          <ul>
+            <li>Ruby on Rails Development</li>
+            <li>JavaScript & Stimulus</li>
+            <li>Frontend Development</li>
+            <li>API Integration</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" aria-label="GitHub">GitHub</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
+
+<script>
+  // Mobile menu toggle
+  document.getElementById('mobileToggle')?.addEventListener('click', function() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks?.classList.toggle('mobile-open');
+  });
+</script>
