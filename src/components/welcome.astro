@@ -1,0 +1,71 @@
+---
+// Component Script (Frontmatter)
+// This runs at build time on the server
+export interface Props {
+  name?: string;
+  greeting?: string;
+  year?: string;
+}
+
+const { name = "World", greeting = "Hello" } = Astro.props;
+const { year = "2025" } = Astro.props;
+---
+
+<!-- Component Template -->
+<div class="welcome-container">
+  <h1 class="welcome-title">{greeting}, {name}!</h1>
+  <p class="welcome-message">
+    Welcome to your first Astro component. This was built in {year}.
+  </p>
+  <button class="welcome-button" id="clickMe">
+    Click me!
+  </button>
+</div>
+
+<style>
+  .welcome-container {
+    padding: 2rem;
+    border: 2px solid #4f46e5;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .welcome-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+
+  .welcome-message {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+  }
+
+  .welcome-button {
+    background: white;
+    color: #4f46e5;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .welcome-button:hover {
+    transform: translateY(-2px);
+  }
+</style>
+
+<script>
+  // Client-side JavaScript
+  // This runs in the browser
+  document.getElementById('clickMe')?.addEventListener('click', () => {
+    alert('Hello from your Astro component!');
+  });
+</script>

@@ -1,25 +1,72 @@
 ---
-import '../styles/global.css';
-// Component Imports
-import Button from '../components/Button.astro';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+import Main from "../layouts/main.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
+<Main 
+  title="Matthew Cali - Freelance Web Developer"
+  description="Professional Ruby on Rails and JavaScript development services. Building modern web applications with clean code and exceptional user experiences."
+  keywords="freelance web developer, ruby on rails, javascript, stimulus, tailwind css, full stack developer"
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-purple text-white py-20 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        Building Digital Solutions That Matter
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 opacity-90">
+        Full-stack web developer specializing in Ruby on Rails, JavaScript, and modern web technologies
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="btn-primary">Start Your Project</a>
+        <a href="/portfolio" class="btn-outline-white hover:bg-white hover:text-purple-600">View My Work</a>
+      </div>
+    </div>
+  </section>
 
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
-	</body>
-</html>
+  <!-- Services Preview -->
+  <section class="py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+        What I Do
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-gradient-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">RR</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Ruby on Rails</h3>
+          <p class="text-gray-600">Robust backend development with clean, maintainable code and best practices.</p>
+        </div>
+        
+        <div class="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-gradient-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">JS</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">JavaScript & Stimulus</h3>
+          <p class="text-gray-600">Interactive frontend experiences with modern JavaScript and Stimulus framework.</p>
+        </div>
+        
+        <div class="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-gradient-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">UI</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Modern UI/UX</h3>
+          <p class="text-gray-600">Beautiful, responsive interfaces built with Tailwind CSS and attention to detail.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-gray-50 py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+        Ready to Start Your Project?
+      </h2>
+      <p class="text-xl text-gray-600 mb-8">
+        Let's discuss how I can help bring your ideas to life with clean, efficient code.
+      </p>
+      <a href="/contact" class="btn-primary text-lg px-8 py-4">Get In Touch</a>
+    </div>
+  </section>
+</Main>
