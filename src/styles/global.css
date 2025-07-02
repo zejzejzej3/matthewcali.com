@@ -1,7 +1,5 @@
 @import 'tailwindcss';
 
-
-
 /* ==========================================================================
    Global Styles - Freelance Website with Tailwind CSS
    ========================================================================== */
@@ -31,6 +29,146 @@ html {
 
 body {
   @apply text-gray-800 bg-white;
+}
+
+/* ==========================================================================
+   Header & Navigation Styles
+   ========================================================================== */
+
+.site-header {
+  @apply bg-white shadow-sm sticky top-0 z-50;
+}
+
+.navbar {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16;
+}
+
+.nav-brand a {
+  @apply no-underline flex flex-col;
+}
+
+.brand-text {
+  @apply text-2xl font-bold;
+  background: var(--purple-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.brand-subtitle {
+  @apply text-sm text-gray-600 -mt-1;
+}
+
+.nav-links {
+  @apply hidden md:flex items-center space-x-8;
+}
+
+.nav-links li {
+  @apply list-none;
+}
+
+.nav-links a {
+  @apply text-gray-800 no-underline font-medium transition-colors duration-300 ease-in-out;
+}
+
+.nav-links a:hover {
+  color: var(--primary-purple);
+}
+
+.cta-link {
+  @apply text-white px-6 py-3 rounded-md font-semibold transition-all duration-200 ease-in-out;
+  background: var(--purple-gradient) !important;
+  color: white !important;
+}
+
+.cta-link:hover {
+  @apply -translate-y-0.5;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.mobile-menu-toggle {
+  @apply flex flex-col bg-transparent border-none cursor-pointer p-2 md:hidden;
+}
+
+.mobile-menu-toggle span {
+  @apply w-6 h-0.5 bg-gray-800 my-0.5 transition-all duration-300 rounded-sm;
+}
+
+/* Mobile navigation */
+@media (max-width: 768px) {
+  .nav-links {
+    @apply flex absolute top-full left-0 right-0 bg-white flex-col p-4 shadow-lg space-x-0 space-y-4;
+    display: none;
+  }
+
+  .nav-links.mobile-open {
+    @apply block;
+  }
+}
+
+/* ==========================================================================
+   Main Content
+   ========================================================================== */
+
+.main-content {
+  @apply min-h-screen;
+}
+
+/* ==========================================================================
+   Footer Styles
+   ========================================================================== */
+
+.site-footer {
+  @apply bg-gray-900 text-white;
+}
+
+.footer-content {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-3 gap-8;
+}
+
+.footer-section h3 {
+  @apply text-xl font-semibold mb-4;
+}
+
+.footer-section p {
+  @apply text-gray-300 mb-4;
+}
+
+.footer-section ul {
+  @apply space-y-2;
+}
+
+.footer-section ul li {
+  @apply text-gray-300 list-none;
+}
+
+.footer-cta {
+  @apply inline-block text-white px-6 py-3 rounded-md no-underline font-semibold mt-4 transition-transform duration-200 ease-in-out;
+  background: var(--purple-gradient);
+}
+
+.footer-cta:hover {
+  @apply -translate-y-0.5;
+}
+
+.social-links {
+  @apply flex space-x-4;
+}
+
+.social-links a {
+  @apply text-gray-300 no-underline transition-colors duration-300 ease-in-out;
+}
+
+.social-links a:hover {
+  color: var(--purple-light);
+}
+
+.footer-bottom {
+  @apply border-t border-gray-800 py-6;
+}
+
+.footer-bottom p {
+  @apply text-center text-gray-400 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 }
 
 /* ==========================================================================
@@ -85,79 +223,18 @@ body {
   @apply bg-purple-500 text-white -translate-y-0.5;
 }
 
-/* Navigation specific styles */
-.nav-brand-link {
-  @apply no-underline flex flex-col;
+.btn-outline-white {
+  @apply inline-block px-6 py-3 rounded-lg font-semibold transition-all duration-300 ease-in-out;
+  @apply bg-transparent border-2 border-white text-white;
 }
 
-.nav-brand-text {
-  @apply text-2xl font-bold;
-}
-
-.nav-brand-subtitle {
-  @apply text-sm text-gray-600 -mt-1;
-}
-
-.nav-link {
-  @apply text-gray-800 no-underline font-medium transition-colors duration-300 ease-in-out;
-}
-
-.nav-link:hover {
-  color: var(--primary-purple);
-}
-
-.nav-cta-link {
-  @apply text-white px-6 py-3 rounded-md font-semibold transition-all duration-200 ease-in-out;
-  background: var(--purple-gradient) !important;
-  color: white !important;
-}
-
-.nav-cta-link:hover {
-  @apply -translate-y-0.5;
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
-}
-
-/* Mobile menu toggle */
-.mobile-menu-toggle {
-  @apply flex flex-col bg-transparent border-none cursor-pointer p-2 md:hidden;
-}
-
-.mobile-menu-toggle span {
-  @apply w-6 h-0.5 bg-gray-800 my-0.5 transition-all duration-300 rounded-sm;
-}
-
-/* Footer specific styles */
-.footer-cta {
-  @apply inline-block text-white px-6 py-3 rounded-md no-underline font-semibold mt-4 transition-transform duration-200 ease-in-out;
-  background: var(--purple-gradient);
-}
-
-.footer-cta:hover {
-  @apply -translate-y-0.5;
-}
-
-.social-link {
-  @apply text-gray-200 no-underline transition-colors duration-300 ease-in-out;
-}
-
-.social-link:hover {
-  color: var(--purple-light);
+.btn-outline-white:hover {
+  @apply bg-white text-purple-600 -translate-y-0.5;
 }
 
 /* ==========================================================================
    Responsive Utilities
    ========================================================================== */
-
-/* Mobile navigation */
-@media (max-width: 768px) {
-  .nav-links {
-    @apply hidden absolute top-full left-0 right-0 bg-white flex-col p-4 shadow-lg;
-  }
-
-  .nav-links.mobile-open {
-    @apply flex;
-  }
-}
 
 /* Custom shadows */
 .shadow-purple {
