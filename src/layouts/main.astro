@@ -1,6 +1,7 @@
 ---
 // src/layouts/Main.astro
 import '../styles/global.css';
+import { getRelativeLocaleUrl } from 'astro:i18n';
 
 export interface Props {
   title: string;
@@ -23,7 +24,7 @@ const {
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={import.meta.env.BASE_URL + '/favicon.svg'} />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -32,17 +33,17 @@ const {
     <header class="site-header">
       <nav class="navbar">
         <div class="nav-brand">
-          <a href="/">
+          <a href={import.meta.env.BASE_URL}>
             <span class="brand-text">Matthew Cali</span>
             <span class="brand-subtitle">Web Developer</span>
           </a>
         </div>
         <ul class="nav-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/portfolio">Portfolio</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact" class="cta-link">Get In Touch</a></li>
+          <li><a href={import.meta.env.BASE_URL}>Home</a></li>
+          <li><a href={import.meta.env.BASE_URL + '/services'}>Services</a></li>
+          <li><a href={import.meta.env.BASE_URL + '/portfolio'}>Portfolio</a></li>
+          <li><a href={import.meta.env.BASE_URL + '/about'}>About</a></li>
+          <li><a href={import.meta.env.BASE_URL + '/contact'} class="cta-link">Get In Touch</a></li>
         </ul>
         <button class="mobile-menu-toggle" id="mobileToggle">
           <span></span>
@@ -61,7 +62,7 @@ const {
         <div class="footer-section">
           <h3>Let's Work Together</h3>
           <p>Ready to bring your project to life? Let's discuss how I can help.</p>
-          <a href="/contact" class="footer-cta">Start a Project</a>
+          <a href={import.meta.env.BASE_URL + '/contact'} class="footer-cta">Start a Project</a>
         </div>
         <div class="footer-section">
           <h3>Services</h3>
