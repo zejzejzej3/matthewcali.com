@@ -1,9 +1,475 @@
 ---
-import Main from "../layouts/main.astro"
+import Main from "../layouts/main.astro";
 ---
-<Main 
+
+<Main
   title="Portfolio - Matthew Cali Web Developer"
-  description="Professional web development services including Ruby on Rails development, JavaScript/Stimulus, API integration, and modern web applications."
-  keywords="ruby on rails development, javascript stimulus, web development services, api integration, e-commerce development, freelance developer"
+  description="Professional web development services including custom websites, web applications, and digital solutions for businesses of all sizes."
+  keywords="website design, web application development, custom websites, business websites, online presence, digital solutions"
 >
+  <!-- Hero Section -->
+  <section class="bg-gradient-purple text-white py-20 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        My Work & Results
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 opacity-90">
+        Real projects that have helped businesses grow and succeed online
+      </p>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+        Featured Projects
+      </h2>
+
+      <!-- Project 1 - E-commerce Platform -->
+      <div class="mb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="bg-gray-100 rounded-lg p-8 mb-6">
+              <div class="w-full h-48 bg-gradient-purple rounded-lg flex items-center justify-center">
+                <span class="text-white font-bold text-3xl">E-Commerce</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="mb-4">
+              <span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">
+                E-Commerce Platform
+              </span>
+            </div>
+            <h3 class="text-3xl font-bold mb-4 text-gray-900">
+              Online Store with Payment Integration
+            </h3>
+            <p class="text-lg text-gray-600 mb-6">
+              Built a complete e-commerce solution for a local retailer, featuring secure payment processing, inventory management, and customer accounts. The store saw a 40% increase in online sales within the first three months.
+            </p>
+            <div class="mb-6">
+              <h4 class="font-semibold text-gray-900 mb-2">Key Features:</h4>
+              <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-600">
+                <li class="flex items-start">
+                  <span class="text-purple-500 mr-2">✓</span>
+                  Secure payment processing
+                </li>
+                <li class="flex items-start">
+                  <span class="text-purple-500 mr-2">✓</span>
+                  Inventory management
+                </li>
+                <li class="flex items-start">
+                  <span class="text-purple-500 mr-2">✓</span>
+                  Customer accounts
+                </li>
+                <li class="flex items-start">
+                  <span class="text-purple-500 mr-2">✓</span>
+                  Order tracking
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Ruby on Rails</span>
+              <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Stripe API</span>
+              <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+            </div>
+            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+              <div class="flex items-center mb-2">
+                <span class="text-green-600 font-semibold">Results:</span>
+              </div>
+              <p class="text-green-700 text-sm">
+                40% increase in online sales, 60% reduction in order processing time
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 - Business Website -->
+      <div class="mb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="order-2 lg:order-1">
+            <div class="mb-4">
+              <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
+                Business Website
+              </span>
+            </div>
+            <h3 class="text-3xl font-bold mb-4 text-gray-900">
+              Professional Services Website
+            </h3>
+            <p class="text-lg text-gray-600 mb-6">
+              Designed and developed a modern website for a consulting firm, complete with service pages, client testimonials, and a contact system. The new website increased client inquiries by 65% and improved their professional image.
+            </p>
+            <div class="mb-6">
+              <h4 class="font-semibold text-gray-900 mb-2">Key Features:</h4>
+              <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-600">
+                <li class="flex items-start">
+                  <span class="text-purple-500 mr-2">✓</span>
+                  Modern responsive design
+                </li>
+                <li class="flex items-start">
+                  <span class="text-purple-500 mr-2">✓</span>
+                  Content management system
+                </li>
+                <li class="flex items-start">
+                  <span class="text-purple-500 mr-2">✓</span>
+                  Contact form integration
+                </li>
+                <li class="flex items-start">
+                  <span class="text-purple-500 mr-2">✓</span>
+                  SEO optimization
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Astro</span>
+              <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+              <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Netlify</span>
+            </div>
+            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+              <div class="flex items-center mb-2">
+                <span class="text-green-600 font-semibold">Results:</span>
+              </div>
+              <p class="text-green-700 text-sm">
+                65% increase in client inquiries, improved search engine rankings
+              </p>
+            </div>
+          </div>
+          <div class="order-1 lg:order-2">
+            <div class="bg-gray-100 rounded-lg p-8 mb-6">
+              <div class="w-full h-48 bg-gradient-purple rounded-lg flex items-center justify-center">
+                <span class="text-white font-bold text-3xl">Business</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 - Custom Application -->
+      <div class="mb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="bg-gray-100 rounded-lg p-8 mb-6">
+              <div class="w-full h-48 bg-gradient-purple rounded-lg flex items-center justify-center">
+                <span class="text-white font-bold text-3xl">Custom App</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="mb-4">
+              <span class="inline-block bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-semibold">
+                Custom Application
+              </span>
+            </div>
+            <h3 class="text-3xl font-bold mb-4 text-gray-900">
+              Event Management System
+            </h3>
+            <p class="text-lg text-gray-600 mb-6">
+              Created a comprehensive event management platform for a conference organizer, including registration, payment processing, and attendee management. The system handled over 1,000 registrations and streamlined their entire event process.
+            </p>
+            <div class="mb-6">
+              <h4 class="font-semibold text-gray-900 mb-2">Key Features:</h4>
+              <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-600">
+                <li class="flex items-start">
+                  <span class="text-purple-500 mr-2">✓</span>
+                  Event registration system
+                </li>
+                <li class="flex items-start">
+                  <span class="text-purple-500 mr-2">✓</span>
+                  Payment processing
+                </li>
+                <li class="flex items-start">
+                  <span class="text-purple-500 mr-2">✓</span>
+                  Attendee management
+                </li>
+                <li class="flex items-start">
+                  <span class="text-purple-500 mr-2">✓</span>
+                  Email notifications
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Ruby on Rails</span>
+              <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Stimulus</span>
+              <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+            </div>
+            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+              <div class="flex items-center mb-2">
+                <span class="text-green-600 font-semibold">Results:</span>
+              </div>
+              <p class="text-green-700 text-sm">
+                1,000+ registrations processed, 75% reduction in administrative time
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="bg-gray-50 py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+        More Projects
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Card 1 -->
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+          <div class="h-48 bg-gradient-purple flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Restaurant</span>
+          </div>
+          <div class="p-6">
+            <div class="mb-2">
+              <span class="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-semibold">
+                Restaurant Website
+              </span>
+            </div>
+            <h3 class="text-lg font-semibold mb-2 text-gray-900">Local Restaurant Site</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Modern website with online menu, reservation system, and location information.
+            </p>
+            <div class="flex flex-wrap gap-1">
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Astro</span>
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Tailwind</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+          <div class="h-48 bg-gradient-purple flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Portfolio</span>
+          </div>
+          <div class="p-6">
+            <div class="mb-2">
+              <span class="inline-block bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-semibold">
+                Artist Portfolio
+              </span>
+            </div>
+            <h3 class="text-lg font-semibold mb-2 text-gray-900">Artist Portfolio Site</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Clean, gallery-focused website showcasing artwork with image optimization.
+            </p>
+            <div class="flex flex-wrap gap-1">
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">React</span>
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Next.js</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+          <div class="h-48 bg-gradient-purple flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Dashboard</span>
+          </div>
+          <div class="p-6">
+            <div class="mb-2">
+              <span class="inline-block bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-semibold">
+                Admin Dashboard
+              </span>
+            </div>
+            <h3 class="text-lg font-semibold mb-2 text-gray-900">Business Dashboard</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Custom analytics dashboard with real-time data visualization and reporting.
+            </p>
+            <div class="flex flex-wrap gap-1">
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Rails</span>
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Chart.js</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 4 -->
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+          <div class="h-48 bg-gradient-purple flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Booking</span>
+          </div>
+          <div class="p-6">
+            <div class="mb-2">
+              <span class="inline-block bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-semibold">
+                Booking System
+              </span>
+            </div>
+            <h3 class="text-lg font-semibold mb-2 text-gray-900">Appointment Booking</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Online appointment scheduling system with calendar integration and reminders.
+            </p>
+            <div class="flex flex-wrap gap-1">
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Ruby on Rails</span>
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Stimulus</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 5 -->
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+          <div class="h-48 bg-gradient-purple flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Blog</span>
+          </div>
+          <div class="p-6">
+            <div class="mb-2">
+              <span class="inline-block bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full text-xs font-semibold">
+                Blog Platform
+              </span>
+            </div>
+            <h3 class="text-lg font-semibold mb-2 text-gray-900">Company Blog</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Content management system with SEO optimization and social sharing features.
+            </p>
+            <div class="flex flex-wrap gap-1">
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Astro</span>
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Markdown</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 6 -->
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+          <div class="h-48 bg-gradient-purple flex items-center justify-center">
+            <span class="text-white font-bold text-xl">API</span>
+          </div>
+          <div class="p-6">
+            <div class="mb-2">
+              <span class="inline-block bg-red-100 text-red-800 px-2 py-1 rounded-full text-xs font-semibold">
+                API Integration
+              </span>
+            </div>
+            <h3 class="text-lg font-semibold mb-2 text-gray-900">Payment Integration</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Custom payment processing integration with automated tax calculations.
+            </p>
+            <div class="flex flex-wrap gap-1">
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Ruby on Rails</span>
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Stripe API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies Section -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+        Technologies I Use
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-gradient-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">FE</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-gray-900">Frontend</h3>
+          <div class="flex flex-wrap gap-2 justify-center">
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">HTML5</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">CSS3</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">JavaScript</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Stimulus</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Bootstrap</span>
+          </div>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-gradient-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">BE</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-gray-900">Backend</h3>
+          <div class="flex flex-wrap gap-2 justify-center">
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Ruby on Rails</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Ruby</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">RESTful APIs</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Sidekiq</span>
+          </div>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-gradient-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">DS</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-gray-900">Deployment & Services</h3>
+          <div class="flex flex-wrap gap-2 justify-center">
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Heroku</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Netlify</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">AWS</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Stripe API</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="bg-gray-50 py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+        What Clients Say
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-lg p-8 shadow-md">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-purple rounded-full flex items-center justify-center mr-4">
+              <span class="text-white font-bold">SA</span>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900">Sarah Anderson</h4>
+              <p class="text-gray-600 text-sm">Retail Business Owner</p>
+            </div>
+          </div>
+          <p class="text-gray-600 italic mb-4">
+            "Matthew built us an amazing online store that's been a game-changer for our business. Sales have increased significantly, and our customers love how easy it is to use."
+          </p>
+          <div class="flex text-yellow-400">
+            <span>★★★★★</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg p-8 shadow-md">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-purple rounded-full flex items-center justify-center mr-4">
+              <span class="text-white font-bold">MJ</span>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900">Michael Johnson</h4>
+              <p class="text-gray-600 text-sm">Consulting Firm Owner</p>
+            </div>
+          </div>
+          <p class="text-gray-600 italic mb-4">
+            "Our new website has completely transformed our business. We're getting more inquiries than ever, and the professional look has really elevated our brand."
+          </p>
+          <div class="flex text-yellow-400">
+            <span>★★★★★</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-gradient-purple text-white py-20 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+        Ready to Start Your Project?
+      </h2>
+      <p class="text-xl mb-8 opacity-90">
+        Let's discuss how I can help bring your vision to life and create a solution that grows your business.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href={import.meta.env.BASE_URL + "/contact"}
+          class="btn-outline-white hover:bg-white hover:text-purple-600 text-lg px-8 py-4"
+          >Get a Quote</a
+        >
+        <a
+          href={import.meta.env.BASE_URL + "/services"}
+          class="btn-outline-white hover:bg-white hover:text-purple-600 text-lg px-8 py-4"
+          >View Services</a
+        >
+      </div>
+    </div>
+  </section>
 </Main>

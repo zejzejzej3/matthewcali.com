@@ -1,9 +1,283 @@
 ---
-import Main from "../layouts/main.astro"
+import Main from "../layouts/main.astro";
 ---
-<Main 
+
+<Main
   title="About - Matthew Cali Web Developer"
-  description="Professional web development services including Ruby on Rails development, JavaScript/Stimulus, API integration, and modern web applications."
-  keywords="ruby on rails development, javascript stimulus, web development services, api integration, e-commerce development, freelance developer"
+  description="Learn about Matthew Cali, a skilled web developer specializing in Ruby on Rails, custom websites, and digital solutions that help businesses grow."
+  keywords="about Matthew Cali, web developer, Ruby on Rails developer, custom websites, business solutions, web applications"
 >
+  <!-- Hero Section -->
+  <section class="bg-gradient-purple text-white py-20 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        About Matthew
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 opacity-90">
+        Passionate web developer helping businesses succeed through custom digital solutions
+      </p>
+    </div>
+  </section>
+
+  <!-- Main About Content -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+        <div>
+          <div class="bg-gray-100 rounded-lg p-8">
+            <div class="w-full h-64 bg-gradient-purple rounded-lg flex items-center justify-center">
+              <span class="text-white font-bold text-4xl">MC</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+            Building Digital Solutions That Work
+          </h2>
+          <p class="text-lg text-gray-600 mb-6">
+            I'm a web developer with a passion for creating custom websites and applications that help businesses grow. With expertise in Ruby on Rails, modern JavaScript, and responsive design, I focus on building solutions that are both powerful and user-friendly.
+          </p>
+          <p class="text-lg text-gray-600 mb-6">
+            Every project I take on is an opportunity to solve real business problems through clean, efficient code and thoughtful design. I believe in creating digital experiences that not only look great but deliver measurable results.
+          </p>
+          <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+            <p class="text-purple-800 font-semibold">
+              "I don't just build websites – I create digital solutions that help businesses thrive online."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Expertise -->
+  <section class="bg-gray-50 py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+        Skills & Expertise
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg p-6 shadow-md">
+          <div class="w-12 h-12 bg-gradient-purple rounded-full flex items-center justify-center mb-4">
+            <span class="text-white font-bold">RR</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-gray-900">Ruby on Rails</h3>
+          <p class="text-gray-600 mb-4">
+            Expert in building scalable web applications with Ruby on Rails, including e-commerce platforms, content management systems, and custom business applications.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Ruby 3.3</span>
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Rails 7</span>
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 shadow-md">
+          <div class="w-12 h-12 bg-gradient-purple rounded-full flex items-center justify-center mb-4">
+            <span class="text-white font-bold">FE</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-gray-900">Frontend Development</h3>
+          <p class="text-gray-600 mb-4">
+            Creating responsive, interactive user interfaces using modern JavaScript, Stimulus, and CSS frameworks that provide excellent user experiences.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Stimulus</span>
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Tailwind CSS</span>
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 shadow-md">
+          <div class="w-12 h-12 bg-gradient-purple rounded-full flex items-center justify-center mb-4">
+            <span class="text-white font-bold">API</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-gray-900">API Integration</h3>
+          <p class="text-gray-600 mb-4">
+            Seamlessly integrating third-party services like payment processors, email systems, and business tools to create comprehensive solutions.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Stripe API</span>
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">RESTful APIs</span>
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Webhooks</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 shadow-md">
+          <div class="w-12 h-12 bg-gradient-purple rounded-full flex items-center justify-center mb-4">
+            <span class="text-white font-bold">DB</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-gray-900">Database Design</h3>
+          <p class="text-gray-600 mb-4">
+            Designing efficient database schemas and optimizing queries for performance, ensuring your application can scale as your business grows.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">PostgreSQL</span>
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">ActiveRecord</span>
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Redis</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 shadow-md">
+          <div class="w-12 h-12 bg-gradient-purple rounded-full flex items-center justify-center mb-4">
+            <span class="text-white font-bold">DV</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-gray-900">Deployment & DevOps</h3>
+          <p class="text-gray-600 mb-4">
+            Getting your application live and running smoothly with proper deployment strategies, monitoring, and maintenance procedures.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Heroku</span>
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">AWS</span>
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Git</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 shadow-md">
+          <div class="w-12 h-12 bg-gradient-purple rounded-full flex items-center justify-center mb-4">
+            <span class="text-white font-bold">UX</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-gray-900">User Experience</h3>
+          <p class="text-gray-600 mb-4">
+            Focusing on creating intuitive, accessible interfaces that make it easy for your customers to accomplish their goals on your website.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Responsive Design</span>
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Accessibility</span>
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Performance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Background -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+        Experience & Background
+      </h2>
+      <div class="space-y-8">
+        <div class="bg-white border border-gray-200 rounded-lg p-8 shadow-sm">
+          <div class="flex items-start space-x-4">
+            <div class="w-16 h-16 bg-gradient-purple rounded-full flex items-center justify-center flex-shrink-0">
+              <span class="text-white font-bold">WD</span>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-xl font-semibold mb-2 text-gray-900">Web Development Professional</h3>
+              <p class="text-gray-600 mb-4">
+                With years of experience in professional web development, I've worked on everything from small business websites to complex enterprise applications. My background includes building e-commerce platforms, content management systems, and custom business applications that serve thousands of users.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Enterprise Applications</span>
+                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">E-commerce Platforms</span>
+                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">API Development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-8 shadow-sm">
+          <div class="flex items-start space-x-4">
+            <div class="w-16 h-16 bg-gradient-purple rounded-full flex items-center justify-center flex-shrink-0">
+              <span class="text-white font-bold">PS</span>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-xl font-semibold mb-2 text-gray-900">Problem Solver</h3>
+              <p class="text-gray-600 mb-4">
+                I thrive on solving complex technical challenges and finding elegant solutions to business problems. Whether it's optimizing database performance, integrating third-party services, or creating intuitive user interfaces, I approach each challenge with curiosity and determination.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">System Integration</span>
+                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Performance Optimization</span>
+                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Technical Architecture</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-8 shadow-sm">
+          <div class="flex items-start space-x-4">
+            <div class="w-16 h-16 bg-gradient-purple rounded-full flex items-center justify-center flex-shrink-0">
+              <span class="text-white font-bold">CL</span>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-xl font-semibold mb-2 text-gray-900">Client-Focused Approach</h3>
+              <p class="text-gray-600 mb-4">
+                I believe the best technical solutions come from truly understanding your business needs. I take time to listen, ask the right questions, and ensure that every feature I build serves a real purpose for your business and your customers.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Business Analysis</span>
+                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Requirements Gathering</span>
+                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">User-Centered Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values & Approach -->
+  <section class="bg-gray-50 py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+        My Development Philosophy
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-gradient-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Q</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-gray-900">Quality First</h3>
+          <p class="text-gray-600">
+            I write clean, maintainable code that stands the test of time. Every line is crafted with care, following best practices and industry standards to ensure your application is robust and scalable.
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-gradient-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">R</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-gray-900">Results-Driven</h3>
+          <p class="text-gray-600">
+            Every feature I build serves a purpose. I focus on creating solutions that drive real business value, whether that's increased sales, improved efficiency, or better customer experiences.
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-gradient-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">C</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-gray-900">Clear Communication</h3>
+          <p class="text-gray-600">
+            I believe in keeping clients informed throughout the development process. Regular updates, clear explanations, and transparent timelines ensure we're always on the same page.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-gradient-purple text-white py-20 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+        Let's Work Together
+      </h2>
+      <p class="text-xl mb-8 opacity-90">
+        Ready to bring your vision to life? I'd love to hear about your project and discuss how I can help your business succeed online.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href={import.meta.env.BASE_URL + "/contact"}
+          class="btn-outline-white hover:bg-white hover:text-purple-600 text-lg px-8 py-4"
+          >Get In Touch</a
+        >
+        <a
+          href={import.meta.env.BASE_URL + "/portfolio"}
+          class="btn-outline-white hover:bg-white hover:text-purple-600 text-lg px-8 py-4"
+          >View My Work</a
+        >
+      </div>
+    </div>
+  </section>
 </Main>
